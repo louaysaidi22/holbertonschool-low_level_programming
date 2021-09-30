@@ -6,6 +6,6 @@
  */
 int main(void)
 {
-#define PRINTSIZE(Type) printf("sizeof " #Type " is %zu\n", sizeof(Type));
+printf("%zu\n", sizeof(Type));
 return (0);
 }
