@@ -6,6 +6,6 @@
  */
 int main(void)
 {
-printf("%zu\n", sizeof(Type));
+printf("%lu\n", sizeof();
 return (0);
 }
