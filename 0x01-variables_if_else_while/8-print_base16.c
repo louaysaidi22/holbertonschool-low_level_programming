@@ -5,17 +5,16 @@
  * Return: 0
  */
 int main(void)
-{
-int a = 0;
+{char a = '0';
 char c = 'a';
-while (a < 10)
+while (a <= '9')
 {
-printf("%d", a);
+putchar(a);
 a++;
 }
 while (c <= 'f')
 {
-printf("%c", c);
+putchar(c);
 c++;
 }
 putchar('\n');
