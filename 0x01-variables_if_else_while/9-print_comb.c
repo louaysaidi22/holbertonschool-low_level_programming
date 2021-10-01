@@ -14,6 +14,6 @@ printf(", ");
 n++;
 }
 n = 9;
-printf("%d", n);
+printf("%d ", n);
 return (0);
 }
