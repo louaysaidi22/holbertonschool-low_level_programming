@@ -7,13 +7,13 @@
 int main(void)
 {
 int a = 0;
-char c = 'A';
+char c = 'a';
 while (a < 10)
 {
 printf("%d", a);
 a++;
 }
-while (c <= 'F')
+while (c <= 'f')
 {
 printf("%c", c);
 c++;
