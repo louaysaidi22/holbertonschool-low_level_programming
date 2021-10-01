@@ -10,7 +10,7 @@ char alphabet;
 alphabet = 'a';
 while (alphabet <= 'z')
 {
-if ((alphabet != 'q') || (alphabet != 'e'))
+if ((alphabet != 'e') && (alphabet != 'q'))
 {
 putchar(alphabet);
 }
