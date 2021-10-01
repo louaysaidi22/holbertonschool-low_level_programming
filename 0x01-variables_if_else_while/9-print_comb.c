@@ -6,17 +6,15 @@
  */
 int main(void)
 {
-char n = '0';
-char c = ',';
-char e = ' ';
-while (n < '9')
+int n = 0;
+while (n < 9)
 {
-putchar(n);
-putchar(c);
-putchar(e);
+putchar(n + '0');
+putchar(',');
+putchar(' ');
 n++;
 }
-n = '9';
-putchar(n);
+n = 9;
+putchar(n + '0');
 return (0);
 }
