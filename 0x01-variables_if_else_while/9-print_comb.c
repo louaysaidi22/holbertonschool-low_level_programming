@@ -1,4 +1,4 @@
-#<stdio.h>
+#include<stdio.h>
 /**
  * main - Entry point
  *  prints all possible combinations of single-digit numbers.
