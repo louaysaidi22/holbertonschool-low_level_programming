@@ -1,7 +1,7 @@
 #include<stdio.h>
 /**
  * main - Entry point
- *  prints all possible combinations of single-digit numbers..
+ *  prints all possible combinations of single-digit numbers.
  * Return: 0
  */
 int main(void)
@@ -14,6 +14,6 @@ printf(", ");
 n++;
 }
 n = 9;
-printf("%d ", n);
+printf("%d\n", n);
 return (0);
 }
