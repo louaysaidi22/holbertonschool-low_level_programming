@@ -12,6 +12,7 @@ while (alphabet <= 'z')
 {
 putchar(alphabet);
 alphabet++;
+putchar(" ");
 }
 return (0);
 }
