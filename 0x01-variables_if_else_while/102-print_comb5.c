@@ -25,11 +25,8 @@ putchar(d);
 putchar(' ');
 putchar(m);
 putchar(p);
-if ()
-{
 putchar(',');
 putchar(' ');
-}
 }
 p++;
 }
