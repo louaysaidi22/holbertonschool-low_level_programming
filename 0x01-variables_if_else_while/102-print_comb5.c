@@ -25,8 +25,11 @@ putchar(d);
 putchar(' ');
 putchar(m);
 putchar(p);
+if (!((n == '9') && (d == '8') && (m == '9') && (p == '9')))
+{
 putchar(',');
 putchar(' ');
+}
 }
 p++;
 }
