@@ -18,7 +18,7 @@ while (m <= '9')
 {
 while (p <= '9')
 {
-if (((n != m) || (d != p)) && ((m == n) && (d < p)))
+if (((n != m) || (d != p)) && (d < p))
 {
 putchar(n);
 putchar(d);
