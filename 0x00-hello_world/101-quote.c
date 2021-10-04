@@ -1,6 +1,5 @@
-#include <stdio.h>
-#include <unistd.h>
-#include <sys/syscall.h>
+#include<stdio.h>
+#include<string.h>
 /**
  * main - Entry point
  *
@@ -8,8 +7,12 @@
  */
 int main(void)
 {
-char msg[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-syscall(SYS_write, 1, msg, sizeof(msg));
-putchar('\n');
+char msg[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+int i = 0;
+while (i <= strlen(msg))
+{
+putchar(msg[i]);
+i++;
+}
 return (1);
 }
