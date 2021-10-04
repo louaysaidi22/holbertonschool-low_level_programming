@@ -1,4 +1,6 @@
-#include <stdio.h>
+#include<stdio.h>
+#include <unistd.h>
+#include <sys/syscall.h>
 /**
  * main - Entry point
  *
@@ -6,6 +8,7 @@
  */
 int main(void)
 {
-perror("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+char msg[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+syscall(SYS_write, 1, msg, sizeof(msg));
 return (1);
 }
