@@ -6,26 +6,26 @@
  */
 int main(void)
 {
-int n = '0';
-int d = '0';
-int m = '0';
-int p = '0';
-while (n <= '9')
+int n = 0;
+int d = 0;
+int m = 0;
+int p = 0;
+while (n <= 9)
 {
-while (d <= '9')
+while (d <= 9)
 {
-while (m <= '9')
+while (m <= 9)
 {
-while (p <= '9')
+while (p <= 9)
 {
 if (((n != m) || (d != p)) && (d < p))
 {
-putchar(n);
-putchar(d);
+putchar(n + '0');
+putchar(d + '0');
 putchar(' ');
-putchar(m);
-putchar(p);
-if (!((n == '9') && (d == '8') && (m == '9') && (p == '9')))
+putchar(m + '0');
+putchar(p + '0');
+if (!((n == 9) && (d == 8) && (m == 9) && (p == 9)))
 {
 putchar(',');
 putchar(' ');
@@ -33,13 +33,13 @@ putchar(' ');
 }
 p++;
 }
-p = '0';
+p = 0;
 m++;
 }
-m = '0';
+m = 0;
 d++;
 }
-d = '0';
+d = 0;
 n++;
 }
 putchar('\n');
