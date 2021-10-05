@@ -6,7 +6,7 @@
  * @p: variable to add
  * Return: l
 */
-int add(int n, int p)
+int add(int n,int p)
 {
 int a;
 a = n + p;
