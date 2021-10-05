@@ -11,7 +11,7 @@ int j = 0;
 int k = 0;
 int l = 0;
 int c = 10;
-while (i < 2)
+while (i <= 2)
 {
 while (j < c)
 {
