@@ -4,7 +4,7 @@
  * @c: alphabetic or not
  * Return: 1 if c alphabetic otherwise 0
 */
-int _islower(int c)
+int _isalpha(int c)
 {
 int l = 0;
 if ((c >= 'A') && (c <= 'z'))
