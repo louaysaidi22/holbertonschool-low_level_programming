@@ -2,11 +2,11 @@
 /**
  *  add - function that adds
  *  two integers and returns the result.
- * @int: variable to add
+ * @n: variable to add
+ * @p: variable to add
  * Return: l
 */
-int add(int, int)
+int add(int n, int p)
 {
-int n, p;
 return (n + p);
 }
