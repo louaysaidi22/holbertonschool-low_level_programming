@@ -2,9 +2,9 @@
 /**
  * print_alphabet - prints the alphabet ten times
  * in lowercase using the character a.
- *.
+ *
 */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 int a = 'a';
 for (i = 1; i <= 10; a++)
