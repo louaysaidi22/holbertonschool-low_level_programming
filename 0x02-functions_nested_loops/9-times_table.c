@@ -14,12 +14,12 @@ if (f >= 10)
 {
 l = f / 10;
 k = f % 10;
-_putchar(l);
-_putchar(k);
+_putchar(l + '0');
+_putchar(k + '0');
 }
 else
 {
-_putchar(f);
+_putchar(f + '0');
 }
 }
 _putchar('\n');
