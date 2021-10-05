@@ -3,12 +3,21 @@
  *  print_last_digit - function that prints t
  *  he last digit of a number.
  * @n: number cheked.
- * Return: n
+ * Return: 0
 */
 int print_last_digit(int n)
 {
-int l;
-l = n % 10;
-n = l + l*10;
-return (n);
+int l = n % 10;
+if (l >= 0)
+{
+_putchar(l + '0');
+_putchar(l + '0');
+}
+else
+{
+l = l*(-1);
+_putchar(l + '0');
+_putchar(l + '0');
+}
+return (0);
 }
