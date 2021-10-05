@@ -3,12 +3,12 @@
  *  print_last_digit - function that prints t
  *  he last digit of a number.
  * @n: number cheked.
- * Return: 0
+ * Return: l
 */
 int print_last_digit(int n)
 {
 int l = n % 10;
-if (l < 0)}
+if (l < 0)
 {
 l = l*(-1);
 }
