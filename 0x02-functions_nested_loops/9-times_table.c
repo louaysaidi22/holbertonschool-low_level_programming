@@ -20,6 +20,7 @@ _putchar(k + '0');
 }
 else
 {
+_putchar(' ');
 _putchar(f + '0');
 }
 _putchar(',');
