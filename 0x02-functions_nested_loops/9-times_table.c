@@ -20,7 +20,10 @@ _putchar(k + '0');
 }
 else
 {
+if (m != 0)
+{
 _putchar(' ');
+}
 _putchar(f + '0');
 }
 if (m != 9)
