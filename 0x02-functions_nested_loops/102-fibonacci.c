@@ -13,12 +13,13 @@ long int n = 2;
 long int f = 0;
 printf("%lu, ", p);
 printf("%lu, ", n);
-for (i = 0; i < 48; i++)
+for (i = 0; i < 47; i++)
 {
 f = n + p;
 printf("%lu, ", f);
 p = n;
 n = f;
 }
+printf("%lu", f);
 return (0);
 }
