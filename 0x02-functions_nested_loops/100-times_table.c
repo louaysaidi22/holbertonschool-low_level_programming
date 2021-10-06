@@ -16,12 +16,13 @@ _putchar(48);
 for (m = 1; m <= n; m++)
 {
 f = m * p;
-if (m < 10)
+_putchar(',');
+_putchar(' ');
+if (f < 10)
 {
 _putchar(' ');
 _putchar(' ');
-_putchar(' ');
-_putchar(l + '0');
+_putchar(f + '0');
 }
 else if (f >= 10)
 {
@@ -30,7 +31,6 @@ k = f % 10;
 if (f < 100)
 {
 _putchar(' ');
-_putchar(' ');
 _putchar(l + '0');
 _putchar(k + '0');
 }
@@ -38,7 +38,6 @@ else
 {
 q = l / 10;
 l = l % 10;
-_putchar(' ');
 _putchar(q + '0');
 _putchar(l + '0');
 _putchar(k + '0');
