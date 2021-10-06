@@ -14,7 +14,7 @@ long long int f = 0;
 for (i = 0; i <= 50; i++)
 {
 f = n + p;
-printf("%d, ", f);
+printf("%lld, ", f);
 p = n;
 n = f;
 }
