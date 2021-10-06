@@ -7,6 +7,7 @@
 void print_times_table(int n)
 {
 int q, p, m, f, l, k;
+
 if ((n >= 0) && (n <= 15))
 {
 for (p = 0; p <= n; p++)
@@ -20,9 +21,9 @@ l = f / 10;
 k = f % 10;
 if (f >= 100)
 {
-q = f - ((100 * l) + k);
+q = k / 10;
 k = k % 10;
-_putchar(k + '0');
+_putchar(q + '0');
 }
 _putchar(l + '0');
 _putchar(k + '0');
