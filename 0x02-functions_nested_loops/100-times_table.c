@@ -21,7 +21,7 @@ if (m < 10)
 _putchar(' ');
 _putchar(' ');
 _putchar(' ');
-_putchar(l)
+_putchar(l + '0');
 }
 else if (f >= 10)
 {
