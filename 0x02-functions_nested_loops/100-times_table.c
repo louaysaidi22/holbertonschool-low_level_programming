@@ -30,7 +30,7 @@ k = f % 10;
 if (f < 100)
 {
 _putchar(' ');
-_putchar(' ')
+_putchar(' ');
 _putchar(l + '0');
 _putchar(k + '0');
 }
