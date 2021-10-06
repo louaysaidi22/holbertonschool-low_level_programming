@@ -43,6 +43,10 @@ if (m != n)
 {
 _putchar(',');
 _putchar(' ');
+if (m >= 10)
+{
+putchar(' ');
+}
 }
 }
 _putchar('\n');
