@@ -21,12 +21,13 @@ l = f / 10;
 k = f % 10;
 if (f >= 100)
 {
-q = k / 10;
-k = k % 10;
+q = l / 10;
+l = l % 10;
 _putchar(q + '0');
 }
 _putchar(l + '0');
 _putchar(k + '0');
+
 }
 else
 {
@@ -39,7 +40,6 @@ _putchar(f + '0');
 if (m != n)
 {
 _putchar(',');
-_putchar(' ');
 _putchar(' ');
 }
 }
