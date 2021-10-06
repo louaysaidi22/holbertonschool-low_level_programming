@@ -13,7 +13,7 @@ int n = 2;
 long int f;
 f = 0;
 printf("%i, ", p);
-printf("%i, ", n)
+printf("%i, ", n);
 for (i = 0; i < 48; i++)
 {
 f = n + p;
