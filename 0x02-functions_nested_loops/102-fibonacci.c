@@ -10,12 +10,12 @@ int main(void)
 int i;
 int p = 1;
 int n = 2;
-long long int f;
+long int f;
 f = 0;
 for (i = 0; i <= 50; i++)
 {
 f = n + p;
-printf("%llu, ", f);
+printf("%lu, ", f);
 p = n;
 n = f;
 }
