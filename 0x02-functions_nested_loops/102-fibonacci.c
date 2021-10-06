@@ -20,6 +20,7 @@ printf("%lu, ", f);
 p = n;
 n = f;
 }
+f = n + p;
 printf("%lu", f);
 return (0);
 }
