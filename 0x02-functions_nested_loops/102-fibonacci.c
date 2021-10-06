@@ -8,12 +8,11 @@
 int main(void)
 {
 int i;
-int p = 1;
-int n = 2;
-long int f;
-f = 0;
-printf("%i, ", p);
-printf("%i, ", n);
+long int p = 1;
+long int n = 2;
+long int f = 0;
+printf("%lu, ", p);
+printf("%lu, ", n);
 for (i = 0; i < 48; i++)
 {
 f = n + p;
