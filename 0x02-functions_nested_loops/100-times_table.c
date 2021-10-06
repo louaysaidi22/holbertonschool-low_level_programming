@@ -18,6 +18,12 @@ if (f >= 10)
 {
 l = f / 10;
 k = f % 10;
+if (f >= 100)
+{
+q = f - ((100 * l) + k);
+k = k % 10;
+_putchar(k + '0');
+}
 _putchar(l + '0');
 _putchar(k + '0');
 }
