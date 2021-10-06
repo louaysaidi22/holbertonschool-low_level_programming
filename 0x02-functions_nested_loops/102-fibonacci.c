@@ -10,7 +10,7 @@ int main(void)
 int i;
 int p = 1;
 int n = 2;
-int f = 0;
+long long int f = 0;
 for (i = 0; i <= 50; i++)
 {
 f = n + p;
