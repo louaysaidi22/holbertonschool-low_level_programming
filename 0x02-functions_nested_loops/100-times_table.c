@@ -31,9 +31,10 @@ _putchar(k + '0');
 }
 else
 {
-_putchar(' ');
+
 if (m != 0)
 {
+_putchar(' ');
 _putchar(' ');
 }
 _putchar(f + '0');
