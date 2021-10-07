@@ -14,4 +14,4 @@ int _isupper(int c)
 		l = 1;
 	}
 	return (l);
-i}
+}
