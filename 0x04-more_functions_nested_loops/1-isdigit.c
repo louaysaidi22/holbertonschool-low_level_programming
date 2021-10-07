@@ -2,17 +2,13 @@
 /**
  * _isdigit -  function that checks
  * for a digit
- * @c: using l to return 1 or 0
+ * @c: difit checker
  * Return: 1 if c is a digit otherwise 0
  */
 int _isdigit(int c)
 {
-	if ((c >= '0') && (c <= '9'))
-	{
+	if (c > 47 && c < 58)
 		return(1);
-	}
 	else
-	{
 		return(0);
-	}
 }
