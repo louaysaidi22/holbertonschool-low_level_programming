@@ -5,43 +5,28 @@
  * Return: 0
  */
 int main(void)
-{
-int n = 0;
-int d = 0;
-int m = 0;
-int p = 0;
-while (n <= 9)
-{
-while (d <= 9)
-{
-while (m <= 9)
-{
-while (p <= 9)
-{
-if (((n != m) || (d != p)) && ((n < m) || (d < p)))
-{
-putchar(n + '0');
-putchar(d + '0');
-putchar(' ');
-putchar(m + '0');
-putchar(p + '0');
-if (!((n == 9) && (d == 8) && (m == 9) && (p == 9)))
-{
-putchar(',');
-putchar(' ');
-}
-}
-p++;
-}
-p = 0;
-m++;
-}
-m = 0;
-d++;
-}
-d = 0;
-n++;
-}
-putchar('\n');
-return (0);
+	{
+	int n, p;
+
+	for (n =0; n < 99; n++)
+	{
+		for (p = n; p < 100; p++)
+		{
+			if (n != p)
+			{
+				putchar(n / 10 + '0');
+				putchar(n % 10 + '0');
+				putchar(' ');
+				putchar(p / 10 + '0');
+				putchar(p % 10 + '0');
+				if (!(n == 98 && p == 99))
+				{
+					putchar(' ');
+					putchar(',');
+				}
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
 }
