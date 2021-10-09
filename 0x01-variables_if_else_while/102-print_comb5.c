@@ -21,7 +21,6 @@ int main(void)
 				putchar(p % 10 + '0');
 				if (!(n == 98 && p == 99))
 				{
-					putchar(' ');
 					putchar(',');
 				}
 			}
