@@ -22,6 +22,7 @@ int main(void)
 				if (!(n == 98 && p == 99))
 				{
 					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
