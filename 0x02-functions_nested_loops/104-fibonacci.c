@@ -13,7 +13,7 @@ long int n = 2;
 long int f = 0;
 printf("%lu, ", p);
 printf("%lu, ", n);
-for (i = 1; i < 97; i++)
+for (i = 1; i < 96; i++)
 {
 f = n + p;
 printf("%lu, ", f);
