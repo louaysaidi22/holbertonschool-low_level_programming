@@ -8,9 +8,9 @@
 int main(void)
 {
 int i;
-long int p = 0;
-long int n = 1;
-long int f = 0;
+unsigned long p = 0;
+unsigned long n = 1;
+unsigned long f = 0;
 for (i = 1; i < 100; i++)
 {
 f = n + p;
