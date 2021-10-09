@@ -8,12 +8,10 @@
 int main(void)
 {
 int i;
-unsigned long int p = 1;
-unsigned long int n = 2;
-unsigned long int f = 0;
-printf("%lu, ", p);
-printf("%lu, ", n);
-for (i = 1; i < 96; i++)
+long int p = 0;
+long int n = 1;
+long int f = 0;
+for (i = 1; i < 100; i++)
 {
 f = n + p;
 printf("%lu, ", f);
