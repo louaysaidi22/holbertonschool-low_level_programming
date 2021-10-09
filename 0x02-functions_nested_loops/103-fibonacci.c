@@ -7,8 +7,8 @@
  **/
 int main(void)
 {
-long int p = 1;
-long int n = 2;
+long int p = 0;
+long int n = 1;
 long int f = 0;
 long int k = 0;
 while (f < 3000000)
