@@ -19,6 +19,6 @@ p = n;
 n = f;
 }
 f = n + p;
-printf("%lu\n", f);
+printf("%lu, \n", f);
 return (0);
 }
