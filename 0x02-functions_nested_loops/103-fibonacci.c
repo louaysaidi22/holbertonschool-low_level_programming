@@ -14,7 +14,10 @@ long int k = 0;
 while (f < 3000000)
 {
 f = n + p;
+if (f % 2 == 0)
+{
 k += f;
+}
 p = n;
 n = f;
 }
