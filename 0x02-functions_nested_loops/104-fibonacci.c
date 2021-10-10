@@ -11,13 +11,14 @@ int i;
 unsigned long p = 0;
 unsigned long n = 1;
 unsigned long f = 0;
-for (i = 1; i < 99; i++)
+for (i = 1; i < 98; i++)
 {
 f = n + p;
 printf("%lu, ", f);
 p = n;
 n = f;
 }
-putchar('\n');
+f = n + p;
+printf("%lu\n", f);
 return (0);
 }
