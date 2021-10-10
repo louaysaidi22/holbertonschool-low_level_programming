@@ -14,15 +14,16 @@ while (n != 0)
 {
 	if (n % d != 0)
 		d = d + 1;
-	else 
+	else
 	{
-		maxFact = n;
-                n = n / d;
-		if(n == 1) 
+		f = n;
+		n = n / d;
+		if (n == 1)
 		{
-			printf("%d\n",f);
+			printf("%lu\n", f);
 			break;
 		}
 	}
+}
 return (0);
 }
