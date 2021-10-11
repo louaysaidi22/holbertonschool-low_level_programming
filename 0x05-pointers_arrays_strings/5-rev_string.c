@@ -8,7 +8,7 @@ void print_rev(char *s)
 {
 	int i, j, k, l;
 	char rev[] = "";
-	char c;
+	char *c;
 	l = 0;
 	while (*(s + l) != '\0')
 	{
@@ -16,13 +16,13 @@ void print_rev(char *s)
 	}
 	for (i = l - 1; i >= 0; i--)
 	{
-		c = *(s + i) + 48;
+		*c = *(s + i);
 		(rev + j) = c;
-		j++;
+		j++
 	}
-	for (k = 0; k < l; k++)
-	{
-		c = (rev + k);
-		*(s + k) = c;
-	}
+	 for (k = 0; k < l; k++)
+	 {
+		*c = *(rev + k);
+		(rev + j) = *c;
+	 }		
 }
