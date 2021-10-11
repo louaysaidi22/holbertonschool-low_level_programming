@@ -7,13 +7,13 @@
 void print_rev(char *s)
 {
 	int i, j, l;
-	char rev[0];
 
 	l = 0;
 	while (*(s + l) != '\0')
 	{
 	l++;
 	}
+	char rev[l];
 	for (i = l - 1; i >= 0; i--)
 	{
 		rev[j] = *(s + i);
