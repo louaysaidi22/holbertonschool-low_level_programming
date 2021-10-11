@@ -6,23 +6,18 @@
  */
 void print_rev(char *s)
 {
-	int i, j, k, l;
-	char *rev[] = "";
-	char *c;
+	int l;
+	char temp;
 	l = 0;
 	while (*(s + l) != '\0')
 	{
 	l++;
 	}
-	for (i = l - 1; i >= 0; i--)
+	for (i = l - 1; i > l / 2; i--)
 	{
-		*c = *(s + i);
-		*(rev + j) = *c;
-		j++;
+		temp = c[i];
+		c[i] =c[l - i - 1];
+		c[l - i - 1] = temp;
 	}
-	 for (k = 0; k < l; k++)
-	 {
-		*c = *(rev + k);
-		*(s + j) = *c;
-	 }		
+
 }
