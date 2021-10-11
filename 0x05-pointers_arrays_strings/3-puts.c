@@ -6,7 +6,12 @@
 void _puts(char *str)
 {
 	int i, l;
-	l =  _strlen(str);
+	l = 0;
+	while (*(s + l) != '\0')
+	{
+	l++;
+	}
+		return (n);
 	for (i = 0;i < l; i++)
 	{
 		_putchar(*(str + i));
