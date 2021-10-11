@@ -7,7 +7,7 @@
 void print_rev(char *s)
 {
 	int l, i;
-	int temp;
+	char temp;
 	l = 0;
 	while (*(s + l) != '\0')
 	{
@@ -15,9 +15,9 @@ void print_rev(char *s)
 	}
 	for (i = l - 1; i > l / 2; i--)
 	{
-		temp = c[i];
-		c[i] = c[l - i - 1];
-		c[l - i - 1] = temp;
+		temp = s[i];
+		s[i] = s[l - i - 1];
+		s[l - i - 1] = temp;
 	}
 
 }
