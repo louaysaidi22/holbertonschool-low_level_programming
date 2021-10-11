@@ -16,8 +16,8 @@ void print_rev(char *s)
 	}
 	for (i = l - 1; i >= 0; i--)
 	{
-		c = *(s + i);
-		(rev + j) = *c;
+		c = *(s + i) + 48;
+		(rev + j) = c;
 		j++;
 	}
 	for (k = 0; k < l; k++)
