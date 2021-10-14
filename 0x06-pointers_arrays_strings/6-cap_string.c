@@ -23,6 +23,8 @@ char *cap_string(char *s)
 			{
 				k++;
 			}
+	
+		}
 		if (s[i] > 96 && s[i] < 123 && k > 0)
 		{
 			s[i] -= 32;
