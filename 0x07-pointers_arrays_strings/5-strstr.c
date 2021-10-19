@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  *
  *
@@ -7,18 +8,20 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int i, j, k = 0;
-
-	while (haystack[i] != needle[0])
-		i++;
-	for (j = 0; needle[j]; j++)
+	int i = 0, j, k;
+	while (haystack[i])
 	{
-		if (needle[j] == haystack[j + i])
-		k++;
+		j = 0;
+		k = i;
+		while (haystack[i] == needle[j])
+		{
+			i++;
+			j++;
+		}
+		if (needle[j] == '\0')
+			return(haystack + k);
+		i++;
 	}
-	if (k == j)
-		return(i);
-	else
 		return(NULL);
 }
 
