@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strpbrk - function that searches a string for any of a set of bytes.
  * @s: char
@@ -7,12 +8,15 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int i;
+	int i, j;
 
-	for (i = 0; accept[i]; i++)
+	for (i = 0; s[i]; i++)
 	{
-		if (accept[i] == s)
-			return (s + i);
+		for (j = 0; accept[j]; j++)
+		{
+			if (s[i] == accept[j])
+				return (s + i);
+		}
 	}
 	return (NULL);
 }
