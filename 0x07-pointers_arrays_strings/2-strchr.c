@@ -10,14 +10,12 @@ char *_strchr(char *s, char c)
 {
 	int i = 0;
 
-	while (s[i])
+	while (s[i] && s[i] != c)
 	{
-		if (s[i] == c)
-		{
-			return (s + i);
-		}
-		else
 		i++;
 	}
-	return (NULL);
+	if (s[i])
+		return (s + i);
+	else
+		return (NULL);
 }
