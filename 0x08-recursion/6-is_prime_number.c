@@ -26,6 +26,10 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
+	else if (n == 2)
+	{
+		return (1);
+	}
 	else
-	return (second(2, n));
+	return (second(3, n));
 }
