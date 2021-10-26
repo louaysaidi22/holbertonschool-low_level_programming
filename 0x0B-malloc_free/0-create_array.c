@@ -6,7 +6,7 @@
  * and initializes it with a specific char.
  * @size: size of array
  * @c: char
- * Return:
+ * Return: NUll or pointer
  */
 char *create_array(unsigned int size, char c)
 {
@@ -16,7 +16,9 @@ char *create_array(unsigned int size, char c)
 	if (size == 0)
 		return (NULL);
 	str = malloc(sizeof(char) * size);
-	for (i = 0;i < size; i++)
+	if (str == NULL)
+		return (NULL);
+	for (i = 0; i < size; i++)
 		*(str + i) = c;
 	return (str);
 }
