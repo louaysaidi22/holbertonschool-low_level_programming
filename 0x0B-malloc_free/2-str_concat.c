@@ -13,8 +13,6 @@ char *str_concat(char *s1, char *s2)
 	int l = 0, k;
 	char *s;
 
-	if (s1 == NULL && s2 == NULL)
-		return (NULL);
 	while (s1[i])
 		i++;
 	while (s2[j])
