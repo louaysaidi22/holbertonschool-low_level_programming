@@ -32,9 +32,6 @@ void pr_string(va_list x)
 	char *str;
 
 	str = va_arg(x, char *);
-	if (str == NULL)
-		printf("(nil)");
-	else
 		printf("%s", str);
 }
 /**
@@ -52,6 +49,7 @@ void print_all(const char * const format, ...)
 	};
 	size_t i, j;
 	va_list x;
+	char *s = "";
 
 	i = 0;
 	va_start(x, format);
