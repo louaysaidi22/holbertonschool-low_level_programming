@@ -49,7 +49,6 @@ void print_all(const char * const format, ...)
 	};
 	size_t i, j;
 	va_list x;
-	char *s = "";
 
 	i = 0;
 	va_start(x, format);
