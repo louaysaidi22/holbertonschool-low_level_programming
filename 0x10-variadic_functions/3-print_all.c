@@ -33,7 +33,7 @@ void pr_string(va_list x)
 
 	str = va_arg(x, char *);
 	if (str == NULL)
-		str = "(nil)"; 
+		str = "(nil)";
 	printf("%s", str);
 }
 /**
@@ -55,7 +55,7 @@ void print_all(const char * const format, ...)
 
 	i = 0;
 	va_start(x, format);
-	while (format[i] != '\0')
+	while (format && format[i] != '\0')
 	{
 		j = 0;
 		while (ops[j].op != NULL)
