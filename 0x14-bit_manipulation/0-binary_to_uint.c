@@ -16,7 +16,6 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 	while (b[l])
 		l++;
-	printf("\nl = %u\n", l);
 	for (i = l; i > 0; i--)
 	{
 		c = b[i - 1];
