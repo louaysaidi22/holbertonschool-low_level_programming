@@ -7,14 +7,19 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int fo, fw;
+	int fo, fw, l = 0;
 
 	if (filename == NULL)
 		return (-1);
 	fo = open(filename, O_CREAT | O_WRONLY, 0600);
 	if (fo == -1)
 		return (-1);
-	fw = write(fo, text_content, strlen(text_content));
+	if (text_content != NULL)
+	{
+		while (text_content[l])
+			l++;
+	}
+	fw = write(fo, text_content, l);
 	if (fw == -1)
 		return (-1);
 	close(fo);
