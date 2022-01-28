@@ -8,7 +8,6 @@
 */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-{
 	hash_node_t *aux;
 	hash_node_t *new;
 	unsigned long int i;
@@ -37,5 +36,4 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	new->next = ht->array[i];
 	ht->array[i] = new;
 	return (1);
-}
 }
